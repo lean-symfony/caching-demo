@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Yep</h2>
+    Es ist {{ zeit | date('H:i:s') }}
+
+    <form method="post">
+        <input type="submit" value="Send" name="Send">
+    </form>
+{% endblock %}

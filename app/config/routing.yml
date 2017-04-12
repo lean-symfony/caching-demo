@@ -1,3 +1,7 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+demo:
+    path: /demo
+    defaults: { _controller: AppBundle:Demo:index }

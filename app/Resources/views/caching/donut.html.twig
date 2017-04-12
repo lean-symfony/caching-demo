@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Yep</h2>
+    Es ist {{ zeit | date('H:m:s') }},
+
+    aber eigentlich
+    {{ render_esi(controller('AppBundle:CachingDemo:fragment')) }}
+{% endblock %}
+
+
